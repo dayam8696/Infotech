@@ -177,12 +177,11 @@ html {
 }
 
 .title .first {
-    background-image: url('../Images/freeimg_64013562freejpg850.jpg');
-    transform: translate3d(-100%, 0, 0);
+    background-image: url('../Images/Circuit\ Primary.svg');
 }
 
 .title .second {
-    background-image: url('../Images/freeimg_89251639freejpg850.jpg');
+    background-image: url('../Images/Circuit\ Primary.svg');
 }
 
 .title .contain .text {
@@ -321,8 +320,9 @@ html {
     padding-top: var(--padding-top);
     padding-bottom: var(--padding-bottom);
     gap: 50px;
-    background-color: #fff;
+    background: linear-gradient(to right, #add8e6, #87ceeb);
 }
+
 
 .about .contain .bottom {
     display: flex;
@@ -398,13 +398,7 @@ html {
 
 /*Start Flex*/
 
-.flex .contain {
-    padding-top: var(--padding-top);
-    padding-bottom: var(--padding-bottom);
-    background-image: linear-gradient(to left, var(--primary) 20%, var(--info) 80%);
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 50px;
-}
+
 
 .flex .contain .box {
     display: grid;
@@ -1163,7 +1157,7 @@ button:hover::after {
     letter-spacing: 1.6px;
     color: #fff;
     border-radius: 20px;
-    padding: 10px 20px;
+    padding: 10px 30px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1171,12 +1165,16 @@ button:hover::after {
     position: relative;
     left: 50%;
     transform: translateX(-50%);
+    bottom: 5em;
 }
 
 .top .des {
     font-size: 40px;
     text-align: center;
+    position:static;
+    top: -10em; /* Adjust this value as needed to move the text upwards */
 }
+
 
 .top p {
     text-align: center;
