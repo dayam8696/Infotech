@@ -177,12 +177,35 @@ html {
 }
 
 .title .first {
-    background-image: url('../Images/Circuit\ Primary.svg');
+    background-image: url('https://cdn.dribbble.com/users/45697/screenshots/4804383/24fps.gif');
 }
 
 .title .second {
-    background-image: url('../Images/Circuit\ Primary.svg');
+    background-image: url('https://cdn.dribbble.com/users/45697/screenshots/4804383/24fps.gif');
 }
+
+.title .first,
+.title .second {
+    background-image: url('https://cdn.dribbble.com/users/45697/screenshots/4804383/24fps.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: background-position 0.5s ease, box-shadow 0.5s ease;
+    box-shadow: 0px 0px 20px 1px rgba(255, 255, 255, 0.5); /* initial box-shadow */
+    background-position: -100% 0; /* Initially position the background image outside the viewport on the left */
+}
+
+/* Animation for first background image */
+.title .first.animated {
+    background-position: 100% 0; /* Move background image to the right */
+    box-shadow: 0px 0px 40px 10px rgba(255, 255, 255, 1); /* Brighter glow */
+}
+
+/* Animation for second background image */
+.title .second.animated {
+    background-position: 100% 0; /* Move background image to the right */
+    box-shadow: 0px 0px 40px 10px rgba(255, 255, 255, 1); /* Brighter glow */
+}
+
 
 .title .contain .text {
     display: grid;
@@ -626,10 +649,8 @@ html {
 }
 
 .team .contain .bottom {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    display: flex;
     justify-content: center;
-    align-items: center;
     gap: 30px;
 }
 
