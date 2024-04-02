@@ -139,6 +139,13 @@ $(function() {
 const form = document.getElementById('form');
 const result = document.getElementById('result');
 
+document.addEventListener("DOMContentLoaded", function() {
+    // Add 'animated' class to trigger the animation
+    document.querySelector('.title .first').classList.add('animated');
+    document.querySelector('.title .second').classList.add('animated');
+});
+
+
 form.addEventListener('submit', function(e) {
   e.preventDefault();
   const formData = new FormData(form);
